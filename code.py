@@ -1,4 +1,4 @@
-# l1=[]
+## l1=[]
 # l2=[]
 # l=[]
 
@@ -154,12 +154,65 @@
 # n=int(input("n:"))
 # print(sumprimes(m, n))
 
-def sq(n):
-    for i in range (n):
-        if n=i*i
-        print("sq")
-    else:
-        print("not")
+
+
+# to check perfect square
+# import math
+
+# n = int(input())
+
+# i = int(math.sqrt(n)) #sqrt function returns float so typecasting to int
+
+# if(n == i*i):
+#   print("perfect Square")
+# else:
+#   print("Not Perfect Square")
+
+
+
+
+# # to check palindrome
+# my_str = 'adhadhja'
+# # make it suitable for caseless comparison
+# my_str = my_str.casefold()
+# # reverse the string
+# rev_str = reversed(my_str)
+# # check if the string is equal to its reverse
+# if list(my_str) == list(rev_str):
+#   print("It is palindrome")
+# else:
+#   print("It is not palindrome")
+   
+   
+   
+# def cube(n):
+#     cube=n*n*n
+#     return n
+    
+ 
+# def check(x): 
+#         tmp = x
+#         sum = 0
+#         while tmp != 0:
+#             rem = tmp % 10
+#             sum = sum + cube(rem)
+#             tmp //= 10
+#         # print(sum)
+#         if sum == x:
+#             print(x, "is arm no")
+#         else:
+#             print("not a arm no")
         
-n=int(input("no"))
-sq(n)
+# x=int(input("no:"))
+# check(x)
+
+
+def Vowels(word):
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    for c in word:
+        if c in vowels:
+            res = word.upper()
+    print(res)
+    
+n = input("word:")
+Vowels(n)
