@@ -207,12 +207,56 @@
 # check(x)
 
 
-def Vowels(word):
-    vowels = ('a', 'e', 'i', 'o', 'u')
-    for c in word:
-        if c in vowels:
-            res = word.upper()
-    print(res)
-    
-n = input("word:")
-Vowels(n)
+# def capitalizeVowels(word):
+#     for i in word:
+#         if i=='a' or i=='e' or i=='i' or i=='o' or i=='u':
+#             a = i.upper()
+#             word=word.replace(i, a)
+#     print(word)
+#     # return word
+
+# n = input("word:")
+# capitalizeVowels(n)
+
+
+def check(x): 
+    order = len(str(x))
+    tmp = x
+    sum = 0
+    while tmp != 0:
+        rem = tmp % 10
+        sum = sum + rem**order
+        tmp //= 10
+    # print(sum)
+    if sum == x:
+        print(x, "is arm no")
+    else:
+        print("not a arm no")
+        
+x=int(input("no:"))
+check(x)
+
+
+# num = 1634
+# order = len(str(num))
+# sum = 0
+# temp = num
+# while temp > 0:
+#   digit = temp % 10
+#   sum += digit ** order
+#   temp //= 10
+# if num == sum:
+#   print(num,"is an Armstrong number")
+# else:
+#   print(num,"is not an Armstrong number")
+
+
+
+# to find hypotenuse of triangle
+from math import sqrt
+print("Input lengths of shorter triangle sides:")
+a = float(input("a: "))
+b = float(input("b: "))
+
+c = sqrt(a**2 + b**2)
+print("The length of the hypotenuse is", c )
